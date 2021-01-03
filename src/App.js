@@ -1,9 +1,12 @@
+import React from 'react';
+import { MasterPage, Header } from './component/';
 
 function App() {
   return (
-    <div className="App">
-   
-    </div>
+    <>
+    <Header/>
+    <MasterPage/>
+    </>
   );
 }
 
