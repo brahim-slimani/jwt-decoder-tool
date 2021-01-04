@@ -3,9 +3,10 @@
 
 .root {
     background-color: $primaryColor;
-    color: $textColor; 
+    color: $textLightColor; 
     min-height: 100vh;
     min-width: 100%;
+    position: absolute;
 }
 
 //header
@@ -13,10 +14,24 @@
     background-color: $secondaryColor;
 }
 
-.bi::before {
-    display: inline-block;
-    content: "";
-    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
-    background-repeat: no-repeat;
-    background-size: 1rem 1rem;
-  }
+//jwt decoder
+.jwt-decoder-content {
+    margin: 2% 5%;
+}
+
+.jwt-decoder-content .title {
+    color: $textBlueColor;
+}
+
+
+//common
+.custom-element {
+    background: hsla(0,0%,100%,.08) !important;
+    color: $textBlueColor !important;
+}
+
+.custom-content {
+    background: hsla(0,0%,100%,.08) !important;
+    color: $textLightColor !important;
+    padding: 15px;
+}
