@@ -14,7 +14,7 @@
     background-color: $secondaryColor;
 }
 
-//jwt decoder
+//common
 .jwt-decoder-content {
     margin: 2% 5%;
 }
@@ -23,8 +23,6 @@
     color: $textBlueColor;
 }
 
-
-//common
 .custom-element {
     background: hsla(0,0%,100%,.08) !important;
     color: $textBlueColor !important;
@@ -37,8 +35,15 @@
     margin-bottom: 0rem;
 }
 
-.json-view {
+.json-resolver {
     width: 100%;
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 0.8rem;
-  }
+}
+
+.error-boundary {
+    background: rgba(122, 4, 4, 0.08) !important;
+    color: $textBlueColor !important;
+    border: 1.5px solid #ed1c24 !important;  
+    color: #ed1c24 !important;  
+}

@@ -4,16 +4,15 @@ import utils from '../helper/Utils';
 export const JwtDecoder = () => {
 
     const [decodedToken, setDecodedToken] = useState(null);
-    const [error, setError] = useState(null);
-
 
     const handleDecode = (e) => {
         //e.preventDefault();
         utils.decodeJWT(e.target.value).then((result) => {
             setDecodedToken(result);
+            document.getElementById("jwt-inputText").classList.remove("error-boundary");
         }, (error) => {
-            setError(error);
             setDecodedToken(null);
+            document.getElementById("jwt-inputText").classList.add("error-boundary");
         });
     }
 
@@ -38,7 +37,7 @@ export const JwtDecoder = () => {
                         Header
                     </div>
                     <ul class="list-group list-group-flush">
-                        <pre className="custom-content json-view">
+                        <pre className="custom-content json-resolver">
                             {JSON.stringify(decodedToken.header, undefined, 2)}
                         </pre>
                     </ul>
@@ -47,7 +46,7 @@ export const JwtDecoder = () => {
                         Payload
                     </div>
                     <ul class="list-group list-group-flush">
-                        <pre className="custom-content json-view">
+                        <pre className="custom-content json-resolver">
                             {JSON.stringify(decodedToken.payload, undefined, 2)}
                             {/* {prettyPrintJson.toHtml(decodedToken.payload)} */}
                         </pre>

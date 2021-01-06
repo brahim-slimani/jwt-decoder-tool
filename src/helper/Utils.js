@@ -8,7 +8,7 @@ class Utils {
             const payload = jwt_decode(token);
             resolve({ header, payload, signature: "Verified signature" });
         } catch (err) {
-            resolve("Invalid JWT token !");
+            reject("Invalid JWT token !");
         }
     });
 
