@@ -4,7 +4,7 @@ class Utils {
 
     decodeJWT = (token) => new Promise((resolve, reject) => {
         try {
-            const header = jwt_decode(token, { header: true });
+            const header = jwt_decode(token.replace("Bearer ", ""), { header: true });
             const payload = jwt_decode(token);
             resolve({ header, payload, signature: "Verified signature" });
         } catch (err) {

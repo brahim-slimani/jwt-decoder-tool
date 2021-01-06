@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import utils from '../helper/Utils';
 
-export const JwtDecoder = (props) => {
+export const JwtDecoder = () => {
 
     const [decodedToken, setDecodedToken] = useState(null);
     const [error, setError] = useState(null);
+
 
     const handleDecode = (e) => {
         //e.preventDefault();
@@ -15,7 +16,6 @@ export const JwtDecoder = (props) => {
             setDecodedToken(null);
         });
     }
-
 
     return (
         <div className="jwt-decoder-content">
@@ -38,19 +38,19 @@ export const JwtDecoder = (props) => {
                         Header
                     </div>
                     <ul class="list-group list-group-flush">
-                        <div className="custom-content">
-                            {JSON.stringify(decodedToken.header)}
-                        </div>
+                        <pre className="custom-content json-view">
+                            {JSON.stringify(decodedToken.header, undefined, 2)}
+                        </pre>
                     </ul>
-
 
                     <div class="card-header">
                         Payload
                     </div>
                     <ul class="list-group list-group-flush">
-                        <div className="custom-content">
-                            {JSON.stringify(decodedToken.payload)}
-                        </div>
+                        <pre className="custom-content json-view">
+                            {JSON.stringify(decodedToken.payload, undefined, 2)}
+                            {/* {prettyPrintJson.toHtml(decodedToken.payload)} */}
+                        </pre>
                     </ul>
 
                     <div class="card-header">

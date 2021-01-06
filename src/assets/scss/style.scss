@@ -34,4 +34,11 @@
     background: hsla(0,0%,100%,.08) !important;
     color: $textLightColor !important;
     padding: 15px;
+    margin-bottom: 0rem;
 }
+
+.json-view {
+    width: 100%;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 0.8rem;
+  }
