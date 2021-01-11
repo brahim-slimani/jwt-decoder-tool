@@ -25,6 +25,11 @@
 
 .custom-element {
     background: hsla(0,0%,100%,.08) !important;
+    color: $textLightColor !important;
+}
+
+.head-content {
+    background: hsla(0,0%,100%,.08) !important;
     color: $textBlueColor !important;
 }
 
@@ -43,7 +48,6 @@
 
 .error-boundary {
     background: rgba(122, 4, 4, 0.08) !important;
-    color: $textBlueColor !important;
-    border: 1.5px solid #ed1c24 !important;  
-    color: #ed1c24 !important;  
+    border: 1.5px solid $redColor !important;  
+    color: $redColor !important;  
 }

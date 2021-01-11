@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import utils from '../helper/Utils';
+import logo from '../assets/img/jwt.png';
 
 export const JwtDecoder = () => {
 
@@ -10,7 +11,7 @@ export const JwtDecoder = () => {
         utils.decodeJWT(e.target.value).then((result) => {
             setDecodedToken(result);
             document.getElementById("jwt-inputText").classList.remove("error-boundary");
-        }, (error) => {
+        }, (err) => {
             setDecodedToken(null);
             document.getElementById("jwt-inputText").classList.add("error-boundary");
         });
@@ -18,7 +19,8 @@ export const JwtDecoder = () => {
 
     return (
         <div className="jwt-decoder-content">
-            <h3 className="title">JWT Decoder</h3>
+            <h3 className="title">
+                <img src={logo} height="50" />JWT Decoder</h3>
             <div className="form-group">
                 <label for="jwt-inputText" class="form-label">JWT Decoder helps you to decode and read the token claims </label>
                 <textarea
@@ -29,10 +31,11 @@ export const JwtDecoder = () => {
                     onChange={(e) => handleDecode(e)} />
             </div>
 
+            {/* claims */}
             {
                 decodedToken?.payload &&
 
-                <div class="card custom-element">
+                <div class="card head-content">
                     <div class="card-header">
                         Header
                     </div>
@@ -54,7 +57,7 @@ export const JwtDecoder = () => {
 
                     <div class="card-header">
                         Signature
-                </div>
+                    </div>
                     <ul class="list-group list-group-flush">
                         <div className="custom-content">
                             {decodedToken.signature}
