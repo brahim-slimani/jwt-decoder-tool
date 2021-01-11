@@ -1,14 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import utils from '../helper/Utils';
 import logo from '../assets/img/jwt.png';
 
 export const JwtDecoder = () => {
 
+    const exampleJWToken = "eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Imp3dC1kZWNvZGVyIiwiaXNzIjoic2xpbWFuaSIsImlhdCI6MTUxNjIzOTAyMn0.mCi4zZRP7d9NQD-ULjBL9vB1NvicJD_FnmuFa1zJSfY88yBEpkLX_VExyAXG9XvLxRmrdocHlfzEHB6TTC3HrQ";
     const [decodedToken, setDecodedToken] = useState(null);
+    const [encodedToken, setEncodedToken] = useState(exampleJWToken);
 
+    useEffect(()=>{
+        resolveToken(encodedToken);
+    }, [encodedToken]);
+    
     const handleDecode = (e) => {
         //e.preventDefault();
-        utils.decodeJWT(e.target.value).then((result) => {
+        setEncodedToken(e.target.value);
+    }
+
+    const resolveToken = (token) => {
+        utils.decodeJWT(token).then((result) => {
             setDecodedToken(result);
             document.getElementById("jwt-inputText").classList.remove("error-boundary");
         }, (err) => {
@@ -27,6 +37,7 @@ export const JwtDecoder = () => {
                     className="form-control custom-element"
                     id="jwt-inputText"
                     rows="5"
+                    value={encodedToken}
                     placeholder="Paste your JWT Token .."
                     onChange={(e) => handleDecode(e)} />
             </div>
