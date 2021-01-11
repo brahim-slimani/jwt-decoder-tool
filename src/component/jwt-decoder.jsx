@@ -20,14 +20,14 @@ export const JwtDecoder = () => {
     return (
         <div className="jwt-decoder-content">
             <h3 className="title">
-                <img src={logo} height="50" />JWT Decoder</h3>
+                <img src={logo} height="50" className="jwt-logo" alt="img"/>JWT Decoder</h3>
             <div className="form-group">
-                <label for="jwt-inputText" class="form-label">JWT Decoder helps you to decode and read the token claims </label>
+                <label for="jwt-inputText" class="form-label">JWT Decoder tool that allows you to decode jwt tokens and resolve the claims data, <span className="label-sufix"> try now and paste your token here !</span></label>
                 <textarea
                     className="form-control custom-element"
                     id="jwt-inputText"
                     rows="5"
-                    placeholder="Grap your JWT Token .."
+                    placeholder="Paste your JWT Token .."
                     onChange={(e) => handleDecode(e)} />
             </div>
 

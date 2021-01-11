@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './assets/scss/style.scss';
 import 'bootstrap/dist/css/bootstrap.css';
-import './assets/vendor/icofont.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
