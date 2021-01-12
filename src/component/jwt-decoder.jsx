@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import utils from '../helper/Utils';
-import logo from '../assets/img/jwt.png';
+import logo from '../assets/img/jwt_logo.png';
 
 export const JwtDecoder = () => {
 
@@ -29,10 +29,10 @@ export const JwtDecoder = () => {
 
     return (
         <div className="jwt-decoder-content">
-            <h3 className="title">
-                <img src={logo} height="50" className="jwt-logo" alt="img"/>JWT Decoder</h3>
+            <h4 className="title">
+                <img src={logo} height="50" className="jwt-logo" alt="img"/>JSON Web Token decoder</h4>
             <div className="form-group">
-                <label for="jwt-inputText" class="form-label">JWT Decoder tool that allows you to decode jwt tokens and resolve the claims data, <span className="label-sufix"> try now and paste your token here !</span></label>
+                <label for="jwt-inputText" class="form-label">A tool that allows you to decode jwt tokens and resolve the claims data, <span className="label-sufix"> try now and paste your token here !</span></label>
                 <textarea
                     className="form-control custom-element"
                     id="jwt-inputText"

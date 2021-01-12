@@ -1,16 +1,17 @@
 import React from 'react';
+import iconJWT from '../assets/img/jwt.jpg';
 
 export const Header = (props) => {
     return (
         <nav className="navbar navbar-light custom-header">
             <div className="left-nav">
                 <a className="navbar-brand" href="index" style={{ color: "white" }}>
-                dev codein <i class="bi bi-braces"/> 
+                    <img src={iconJWT} height="25" /> decoder
                 </a>
             </div>
             <div className="right-nav">
                 <a href="https://slimani-ibrahim.github.io/profile" target="_blank" rel="noreferrer">
-                    <i class="bi bi-globe" title="portoflio"/>
+                    <i class="bi bi-globe" title="portoflio" />
                 </a>&nbsp;&nbsp;
                 <a href="https://github.com/Slimani-Ibrahim" target="_blank" rel="noreferrer">
                     <i class="bi bi-github" title="github"></i>

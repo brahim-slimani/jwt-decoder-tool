@@ -1,12 +1,16 @@
 import React from 'react';
-import { MasterPage, Header } from './component/';
+import { MasterPage, Header, Footer } from './component/';
 
 function App() {
   return (
-    <>
-    <Header/>
-    <MasterPage/>
-    </>
+    <div>
+      <Header />
+    
+      <MasterPage />
+
+      <Footer />
+      
+    </div>
   );
 }
 
