@@ -1,5 +1,5 @@
 import React from 'react';
-import { JwtDecoder, Footer } from './';
+import { JwtDecoder } from './';
 
 export const MasterPage = (props) => {
     return (

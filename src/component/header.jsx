@@ -6,7 +6,7 @@ export const Header = (props) => {
         <nav className="navbar navbar-light custom-header">
             <div className="left-nav">
                 <a className="navbar-brand" href="index" style={{ color: "white" }}>
-                    <img src={iconJWT} height="25" /> decoder
+                    <img src={iconJWT} height="25" alt="img"/> decoder
                 </a>
             </div>
             <div className="right-nav">
