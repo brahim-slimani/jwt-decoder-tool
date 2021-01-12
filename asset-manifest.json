@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/jwt-decoder/static/css/main.da7859da.chunk.css",
+    "main.js": "/jwt-decoder/static/js/main.d82583b5.chunk.js",
+    "main.js.map": "/jwt-decoder/static/js/main.d82583b5.chunk.js.map",
+    "runtime-main.js": "/jwt-decoder/static/js/runtime-main.f0e9ad96.js",
+    "runtime-main.js.map": "/jwt-decoder/static/js/runtime-main.f0e9ad96.js.map",
+    "static/css/2.95f25948.chunk.css": "/jwt-decoder/static/css/2.95f25948.chunk.css",
+    "static/js/2.02dd97a0.chunk.js": "/jwt-decoder/static/js/2.02dd97a0.chunk.js",
+    "static/js/2.02dd97a0.chunk.js.map": "/jwt-decoder/static/js/2.02dd97a0.chunk.js.map",
+    "index.html": "/jwt-decoder/index.html",
+    "static/css/2.95f25948.chunk.css.map": "/jwt-decoder/static/css/2.95f25948.chunk.css.map",
+    "static/css/main.da7859da.chunk.css.map": "/jwt-decoder/static/css/main.da7859da.chunk.css.map",
+    "static/js/2.02dd97a0.chunk.js.LICENSE.txt": "/jwt-decoder/static/js/2.02dd97a0.chunk.js.LICENSE.txt",
+    "static/media/jwt_logo.2fa9cada.png": "/jwt-decoder/static/media/jwt_logo.2fa9cada.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0e9ad96.js",
+    "static/css/2.95f25948.chunk.css",
+    "static/js/2.02dd97a0.chunk.js",
+    "static/css/main.da7859da.chunk.css",
+    "static/js/main.d82583b5.chunk.js"
+  ]
+}
