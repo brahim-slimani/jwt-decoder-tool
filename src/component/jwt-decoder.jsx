@@ -62,7 +62,6 @@ export const JwtDecoder = () => {
                     <ul class="list-group list-group-flush">
                         <pre className="custom-content json-resolver">
                             {JSON.stringify(decodedToken.payload, undefined, 2)}
-                            {/* {prettyPrintJson.toHtml(decodedToken.payload)} */}
                         </pre>
                     </ul>
 

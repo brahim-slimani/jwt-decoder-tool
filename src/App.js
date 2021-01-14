@@ -5,11 +5,8 @@ function App() {
   return (
     <div>
       <Header />
-    
       <MasterPage />
-
       <Footer />
-      
     </div>
   );
 }
