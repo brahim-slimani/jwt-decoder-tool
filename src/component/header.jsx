@@ -19,7 +19,7 @@ export const Header = (props) => {
                 <a href="https://www.linkedin.com/in/ibrahim-slimani-184161b2/" target="_blank" rel="noreferrer">
                     <i class="bi bi-linkedin" title="linkedin"></i>
                 </a>&nbsp;&nbsp;
-                <a href="https://github.com/Slimani-Ibrahim/jwt-decoder" target="_blank" rel="noreferrer">
+                <a href="https://github.com/Slimani-Ibrahim/jwt-decoder-tool" target="_blank" rel="noreferrer">
                     <i class="bi bi-code-slash" title="source code"></i>
                 </a>
             </div>
