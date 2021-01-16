@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/jwt-decoder-tool/static/css/main.da7859da.chunk.css",
-    "main.js": "/jwt-decoder-tool/static/js/main.8a59708d.chunk.js",
-    "main.js.map": "/jwt-decoder-tool/static/js/main.8a59708d.chunk.js.map",
+    "main.js": "/jwt-decoder-tool/static/js/main.ecde3d71.chunk.js",
+    "main.js.map": "/jwt-decoder-tool/static/js/main.ecde3d71.chunk.js.map",
     "runtime-main.js": "/jwt-decoder-tool/static/js/runtime-main.412f461b.js",
     "runtime-main.js.map": "/jwt-decoder-tool/static/js/runtime-main.412f461b.js.map",
     "static/css/2.95f25948.chunk.css": "/jwt-decoder-tool/static/css/2.95f25948.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.95f25948.chunk.css",
     "static/js/2.950fb471.chunk.js",
     "static/css/main.da7859da.chunk.css",
-    "static/js/main.8a59708d.chunk.js"
+    "static/js/main.ecde3d71.chunk.js"
   ]
 }
