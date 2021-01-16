@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/jwt-decoder-demo/static/css/main.da7859da.chunk.css",
-    "main.js": "/jwt-decoder-demo/static/js/main.737d80da.chunk.js",
-    "main.js.map": "/jwt-decoder-demo/static/js/main.737d80da.chunk.js.map",
-    "runtime-main.js": "/jwt-decoder-demo/static/js/runtime-main.09e245d8.js",
-    "runtime-main.js.map": "/jwt-decoder-demo/static/js/runtime-main.09e245d8.js.map",
-    "static/css/2.95f25948.chunk.css": "/jwt-decoder-demo/static/css/2.95f25948.chunk.css",
-    "static/js/2.d9d94164.chunk.js": "/jwt-decoder-demo/static/js/2.d9d94164.chunk.js",
-    "static/js/2.d9d94164.chunk.js.map": "/jwt-decoder-demo/static/js/2.d9d94164.chunk.js.map",
-    "index.html": "/jwt-decoder-demo/index.html",
-    "static/css/2.95f25948.chunk.css.map": "/jwt-decoder-demo/static/css/2.95f25948.chunk.css.map",
-    "static/css/main.da7859da.chunk.css.map": "/jwt-decoder-demo/static/css/main.da7859da.chunk.css.map",
-    "static/js/2.d9d94164.chunk.js.LICENSE.txt": "/jwt-decoder-demo/static/js/2.d9d94164.chunk.js.LICENSE.txt",
-    "static/media/jwt_logo.2fa9cada.png": "/jwt-decoder-demo/static/media/jwt_logo.2fa9cada.png"
+    "main.css": "/jwt-decoder-tool/static/css/main.da7859da.chunk.css",
+    "main.js": "/jwt-decoder-tool/static/js/main.8a59708d.chunk.js",
+    "main.js.map": "/jwt-decoder-tool/static/js/main.8a59708d.chunk.js.map",
+    "runtime-main.js": "/jwt-decoder-tool/static/js/runtime-main.412f461b.js",
+    "runtime-main.js.map": "/jwt-decoder-tool/static/js/runtime-main.412f461b.js.map",
+    "static/css/2.95f25948.chunk.css": "/jwt-decoder-tool/static/css/2.95f25948.chunk.css",
+    "static/js/2.950fb471.chunk.js": "/jwt-decoder-tool/static/js/2.950fb471.chunk.js",
+    "static/js/2.950fb471.chunk.js.map": "/jwt-decoder-tool/static/js/2.950fb471.chunk.js.map",
+    "index.html": "/jwt-decoder-tool/index.html",
+    "static/css/2.95f25948.chunk.css.map": "/jwt-decoder-tool/static/css/2.95f25948.chunk.css.map",
+    "static/css/main.da7859da.chunk.css.map": "/jwt-decoder-tool/static/css/main.da7859da.chunk.css.map",
+    "static/js/2.950fb471.chunk.js.LICENSE.txt": "/jwt-decoder-tool/static/js/2.950fb471.chunk.js.LICENSE.txt",
+    "static/media/jwt_logo.2fa9cada.png": "/jwt-decoder-tool/static/media/jwt_logo.2fa9cada.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.09e245d8.js",
+    "static/js/runtime-main.412f461b.js",
     "static/css/2.95f25948.chunk.css",
-    "static/js/2.d9d94164.chunk.js",
+    "static/js/2.950fb471.chunk.js",
     "static/css/main.da7859da.chunk.css",
-    "static/js/main.737d80da.chunk.js"
+    "static/js/main.8a59708d.chunk.js"
   ]
 }
