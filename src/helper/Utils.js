@@ -1,14 +1,14 @@
-import jwt_decode from "jwt-decode";
+import JWTDecoder from 'jwt-decoder-claims';
 
 class Utils {
 
     decodeJWT = (token) => new Promise((resolve, reject) => {
         try {
-            const header = jwt_decode(token.replace("Bearer ", ""), { header: true });
-            const payload = jwt_decode(token);
-            resolve({ header, payload, signature: "Verified signature" });
+            const claims = JWTDecoder.resolve(token);
+            resolve({ header: claims.header, payload: claims.payload, signature: "Verified signature" });
         } catch (err) {
-            reject("Invalid JWT token !");
+            console.error(err);
+            reject(err);
         }
     });
 

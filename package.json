@@ -1,15 +1,14 @@
 {
-  "name": "jwt-decoder-demo",
+  "name": "jwt-decoder-tool",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://slimani-ibrahim.github.io/jwt-decoder-demo",
+  "homepage": "https://slimani-ibrahim.github.io/jwt-decoder-tool",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
-    "base64url": "^3.0.1",
     "bootstrap": "^4.5.3",
-    "jwt-decode": "^3.1.2",
+    "jwt-decoder-claims": "^1.0.0",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
