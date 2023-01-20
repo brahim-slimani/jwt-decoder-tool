@@ -10,16 +10,16 @@ export const Header = (props) => {
                 </a>
             </div>
             <div className="right-nav">
-                <a href="https://slimani-ibrahim.github.io/profile" target="_blank" rel="noreferrer">
+                <a href="https://brahim-slimani.github.io/profile" target="_blank" rel="noreferrer">
                     <i class="bi bi-globe" title="portoflio" />
                 </a>&nbsp;&nbsp;
-                <a href="https://github.com/Slimani-Ibrahim" target="_blank" rel="noreferrer">
+                <a href="https://github.com/brahim-slimani" target="_blank" rel="noreferrer">
                     <i class="bi bi-github" title="github"></i>
                 </a>&nbsp;&nbsp;
-                <a href="https://www.linkedin.com/in/ibrahim-slimani-184161b2/" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/brahim-slimani/" target="_blank" rel="noreferrer">
                     <i class="bi bi-linkedin" title="linkedin"></i>
                 </a>&nbsp;&nbsp;
-                <a href="https://github.com/Slimani-Ibrahim/jwt-decoder-tool" target="_blank" rel="noreferrer">
+                <a href="https://github.com/brahim-slimani/jwt-decoder-tool" target="_blank" rel="noreferrer">
                     <i class="bi bi-code-slash" title="source code"></i>
                 </a>
             </div>
