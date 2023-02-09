@@ -1,26 +1,22 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
-# See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
-
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
-jobs:
-  say-hello:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
-    docker:
-      - image: cimg/base:stable
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-    steps:
+orbs:
+  node: circleci/node@3.0.0
+jobs: 
+  build: 
+    docker:       
+      - image: circleci/node:12.13.1    
+    working_directory: ~/repo
+    steps:      
       - checkout
+      - run: npm cache clean --force
+      - run: npm install
+      - run: CI=false npm run build
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
-
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
-workflows:
-  say-hello-workflow:
-    jobs:
-      - say-hello
+          name: git conf
+          command: |
+            git config --global user.email "slimani.ibr@gmail.com"
+            git config --global user.name "brahim-slimani"
+      - add_ssh_keys:
+          fingerprints:
+            - "65:bf:37:cf:8e:8c:1b:e1:9a:68:c0:1c:a6:82:92:f6"
+      - run: npm run deploy
